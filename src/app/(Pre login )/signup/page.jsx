@@ -24,9 +24,7 @@ useEffect(() => {
     
         if (isAuth()) {
           router.replace("/home");
-        } else {
-          router.replace("/login");
-        }
+        } 
       }, []);
 
 

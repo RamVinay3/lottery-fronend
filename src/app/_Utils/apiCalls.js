@@ -1,7 +1,7 @@
 'use-client '
 const { headers } = require("next/headers");
 
-const host=process.env.NEXT_PUBLIC_HOST|| 'http://localhost:80';
+const host= 'http://localhost:80';
 
 exports.callApi = async (url, method, data) => {
     const headers = { 'Content-Type': 'application/json' };
