@@ -1,0 +1,79 @@
+/* src/app/help/HelpPage.module.css or src/app/feedback/FeedbackPage.module.css */
+
+.container {
+  background: linear-gradient(to bottom, #fff, #FFFDE7); /* White to yellow gradient */
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.backButton {
+  margin-right: 1rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #6B4423; /* Brown accent */
+}
+
+.title {
+  font-size: 2rem;
+  color: #6B4423;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.textArea {
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-radius: 0.8rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  resize: vertical;
+  min-height: 200px;
+  transition: border-color 0.3s ease;
+  color: #6B4423; 
+}
+
+.textArea:focus {
+  border-color: #F9A825; /* Yellow accent */
+}
+
+.sendButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 2rem;
+  background-color: #F9A825;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: auto; /* Prevent from stretching */
+  max-width: 200px; /* Control max width */
+  margin-left: auto; /* Align button to the right */
+}
+
+.sendButton:hover {
+  background-color: #F57F17;
+}
+
+.sendIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.8rem;
+}

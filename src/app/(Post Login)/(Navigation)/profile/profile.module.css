@@ -1,0 +1,111 @@
+/* src/components/Profile.module.css */
+
+/* Entire page background */
+.profilePage {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(to bottom, #ffffff, #FFFDE7); /* White to Yellow gradient */
+  padding: 4rem;
+}
+
+/* Main rectangular card */
+.profileContainer {
+  padding: 2rem;
+  width: 100%;
+  max-width: 40rem;
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+/* Header: icon + user info */
+.profileHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  height: 6rem; /* 60px */
+  width: 6rem;
+  color: #f9a825; /* Yellow accent */
+  margin-bottom: 1rem;
+}
+
+.userInfo {
+  text-align: center;
+}
+
+.userName {
+  font-size: 2rem;
+  color: #6b4423; /* Brown accent */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.userEmail {
+  font-size: 1.4rem;
+  color: #555555;
+}
+
+/* Policy buttons */
+.policyLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.policyButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+  color: #6b4423;
+  text-decoration: none;
+  background-color: #fff9c4;
+  border: 1px solid #f9a825;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.policyButton:hover {
+  background-color: #f9a825;
+  color: #ffffff;
+  border-color: #f57f17;
+}
+
+.arrowIcon {
+  color: inherit;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 480px) {
+  .profileContainer {
+    padding: 1.6rem;
+    margin: 1rem;
+    border-radius: 0.6rem;
+  }
+
+  .icon {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .userName {
+    font-size: 1.8rem;
+  }
+
+  .userEmail {
+    font-size: 1.2rem;
+  }
+
+  .policyButton {
+    font-size: 1.4rem;
+    padding: 0.8rem 1rem;
+  }
+}

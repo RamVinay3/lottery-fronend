@@ -1,0 +1,102 @@
+/* history.module.css */
+
+.container {
+  padding: 2rem; /* 20px */
+  text-align: center;
+  background: linear-gradient(to bottom, #fff, #fffde7);
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  gap:2rem;
+}
+
+.loader {
+  font-size: 2rem;
+  color: #6b4423;
+}
+
+.error {
+  font-size: 1.6rem;
+  color: red;
+  margin-top: 2rem;
+}
+
+.noTickets {
+  font-size: 1.6rem;
+  color: #616161;
+  margin-top: 2rem;
+}
+
+/* Card styling */
+.card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  color: #6b4423;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.cardAlt {
+  background-color: #f9f9f9;
+}
+
+.heading {
+  font-size: 2.4rem;
+  color: #ff7c00; /* Orange color */
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  color: #616161;
+  margin-bottom: 1rem;
+}
+
+.details {
+  font-size: 1.4rem;
+  color: #424242;
+}
+
+.details p {
+  margin: 0.5rem 0;
+}
+
+/* New styling for personalTicketId */
+.details .ticketId {
+  font-size: 1.4rem;
+  color: #ff7c00; /* Orange color for ID */
+  margin-bottom: 1rem;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1rem; /* 10px for smaller screens */
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .card {
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .noTickets {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+    flex-direction: column;
+    gap:1.5rem;
+  }
+  
+}

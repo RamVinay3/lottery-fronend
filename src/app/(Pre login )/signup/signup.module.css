@@ -1,0 +1,80 @@
+/* src/app/signup/SignupPage.module.css */
+
+.signupContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fff, #FFFDE7); /* White to yellow gradient */
+    padding: 16px; /* 1.6rem */
+  }
+  
+  .signupForm {
+    background: #fff;
+    padding: 24px; /* 2.4rem */
+    border-radius: 16px; /* 1.6rem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* 40rem */
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* 1.6rem */
+  }
+  
+  .signupTitle {
+    font-size: 24px; /* 2.4rem */
+    color: #6B4423; /* Brown accent */
+    margin-bottom: 24px; /* 2.4rem */
+    text-align: center;
+  }
+  
+  /* Add spacing between input fields using only margin-bottom */
+  .signupForm > :global(div) {
+    margin-bottom: 16px; /* 1.6rem */
+  }
+  
+  /* Button styles */
+  .signupButton {
+    padding: 12px 20px; /* 1.2rem 2rem */
+    font-size: 16px; /* 1.6rem */
+    background-color: #6B4423; /* Brown color */
+    color: white;
+    border: none;
+    border-radius: 8px; /* 0.8rem */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Only use margin-bottom for spacing */
+  .signupButton {
+    margin-bottom: 16px; /* 1.6rem */
+  }
+  
+  .signupButton:hover {
+    background-color: #5a3820; /* Darker brown on hover */
+  }
+  
+  .signupButton:active {
+    background-color: #4c2e1a; /* Even darker brown on active */
+  }
+  
+  /* Mobile-first responsive styles */
+  @media (max-width: 600px) {
+    .signupForm {
+      padding: 16px; /* 1.6rem */
+    }
+  
+    .signupTitle {
+      font-size: 20px; /* 2rem */
+    }
+  
+    .signupButton {
+      padding: 12px 18px; /* 1.2rem 1.8rem */
+      font-size: 14px; /* 1.4rem */
+    }
+  
+    .signupContainer {
+      padding: 8px; /* 0.8rem */
+    }
+  }
+  

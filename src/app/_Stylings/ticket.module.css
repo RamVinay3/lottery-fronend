@@ -1,0 +1,73 @@
+/* src/components/Ticket.module.css */
+
+.ticketContainer {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.6rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.ticketName {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6B4423; /* Brown accent */
+  margin-bottom: 1rem;
+}
+
+.ticketPrice, .ticketUsers {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.ticketDescription {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.progressBarContainer {
+  background-color: #f0f0f0;
+  border-radius: 1rem;
+  height: 1.6rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: #F9A825; /* Yellow progress bar */
+  border-radius: 1rem;
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  font-size: 1.2rem;
+  color: #6B4423; /* Brown accent */
+  text-align: center;
+}
+
+/* Buy Now Button */
+.buyNowButton {
+  background-color: #F9A825; /* Yellow background */
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-top: 1.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.buyNowButton:hover {
+  background-color: #F57F17; /* Darker yellow for hover effect */
+}
+
+.buyNowButton:focus {
+  outline: none;
+}

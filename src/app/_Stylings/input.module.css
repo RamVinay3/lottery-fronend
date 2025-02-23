@@ -1,0 +1,44 @@
+/* src/components/InputField.module.css */
+
+.input-container {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #6B4423; /* Brown accent */
+  }
+  
+  .input-field {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fff !important; /* Ensure background stays white */
+    color: #333; /* Dark text color */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #F9A825; /* Yellow accent */
+    background-color: #fff; /* Ensure background remains white */
+    box-shadow: 0 0 5px rgba(249, 168, 37, 0.5); /* Add a subtle yellow shadow on focus */
+  }
+  
+  /* Error state: Red border and error message */
+  .input-error {
+    border-color: #B71C1C; /* Error color */
+  }
+  
+  .error-text {
+    color: #B71C1C;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+
+  

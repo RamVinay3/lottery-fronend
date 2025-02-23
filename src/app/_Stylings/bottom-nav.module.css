@@ -1,0 +1,73 @@
+/* src/app/components/BottomNav.module.css */
+.navContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;  /* Fix the navigation to the bottom */
+    bottom: 0;        /* Align it to the bottom of the viewport */
+    left: 0;          /* Ensure it starts from the left */
+    width: 100%;      /* Make it full width */
+    background: #fff; /* White background for the bottom nav */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for the nav bar */
+    z-index: 1000;    /* Ensure it's above other content */
+  }
+  
+  /* Default icons size and spacing */
+  .navItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 2.4rem;  /* Default size of the icon */
+    height: 2.4rem; /* Default size of the icon */
+    transition: all 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  /* Default colors */
+  .homeIcon {
+    color: #6B4423; /* Dark brown for home icon */
+  }
+  
+  .eventHistoryIcon {
+    color: #6B4423; /* Dark brown for event history icon (adjusted to match the theme) */
+  }
+  
+  .profileIcon {
+    color: #6B4423; /* Dark brown for profile icon */
+  }
+  
+  /* Hover effects */
+  .navItem:hover .icon {
+    color: #F59E0B; /* Yellow color on hover */
+  }
+  
+  /* Optional: Focus state for accessibility */
+  .navItem:focus .icon,
+  .navItem:hover .icon {
+    outline: none; /* Remove focus outline */
+    color: #F59E0B; /* Yellow on hover or focus */
+  }
+  
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    .navContainer {
+      padding: 0.8rem;  /* Reduced padding for mobile */
+      font-size: 1.4rem; /* Adjust font size for mobile */
+    }
+  
+    .icon {
+      width: 2rem; /* Slightly smaller icon size for mobile */
+      height: 2rem; /* Slightly smaller icon size for mobile */
+    }
+  
+    /* Optionally, you can tweak spacing or layout based on specific needs */
+    .navItem {
+      padding: 0.8rem;  /* Adjust padding for better mobile fit */
+    }
+  }
+  

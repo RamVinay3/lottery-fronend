@@ -1,0 +1,59 @@
+/* src/app/login/LoginPage.module.css */
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fff, #FFFDE7); /* White to yellow gradient */
+    padding: 1.6rem;
+  }
+  
+  .loginForm {
+    background: #fff;
+    padding: 2.4rem;
+    border-radius: 1.6rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginTitle {
+    font-size: 2.4rem;
+    color: #6B4423; /* Brown accent */
+    margin-bottom: 2.4rem;
+    text-align: center;
+  }
+  
+  .links {
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .forgotPassword {
+    font-size: 1.4rem;
+    color: #F9A825; /* Yellow */
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .forgotPassword:hover {
+    text-decoration: underline;
+  }
+  
+  .signupLink {
+    font-size: 1.4rem;
+    color: #6B4423; /* Brown */
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .signupLink:hover {
+    text-decoration: underline;
+  }
+  
