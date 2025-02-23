@@ -67,7 +67,7 @@ useEffect(() => {
         <InputField
           type="text"
           name="secondName"
-          label="second Name"
+          label="Last Name"
           placeholder="Enter your last name"
           value={formData.secondName}
           onChange={handleChange}
@@ -77,7 +77,7 @@ useEffect(() => {
           type="text"
           name="username"
           label="Username"
-          placeholder="Enter your username"
+          placeholder="Enter your user name"
           value={formData.username}
           onChange={handleChange}
           error={errors.username}
